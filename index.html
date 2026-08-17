@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Club de video">
+    <meta name="keywords" content="peliculas, videos, cine, series">
+    <meta property="og:title" content="Club de video">
+    <meta>
+    <title>Club de Videos</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><!-- COMENTARIO-->
+            <h1>Club de Videos</h1>
+        </div>
+        <nav>
+            <ul>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#peliculas">Películas</a></li>
+                        <li><a href="#actores"></a>Actores</li>
+                        <li><a href="#contacto"></a>Contacto</li>
+                    </ul>
+                </nav>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos a Club de Videos</h2>
+            <p>Aquí encontraras las mejores peliculas</p>
+            <button>Ver películas</button>
+        </section>
+        <section id="peliculas">
+            <h2>Películas destacadas</h2>
+            <article itemscope itemtype="https://mipagina/movie">
+                <img src="images/aus.jpg" alt="Pelicula animada" itemprop="Pelicula animada">
+                <h3 itemprop="name">Backyardigans: La Película</h3>
+                <p itemprop="description">Una historia de los Backyardigams</p>
+                <span itemprop="director">Director: Janice Burgess</span>
+                <span itemprop="published">Año 2026</span>
+            </article>
+        </section>
+        <section id="testimonios">
+            <h2>Testimonios</h2>
+            <blockquote>
+                "Esta sección tiene las mejores películas"
+                <cite>Ana Valle</cite>
+            </blockquote>
+            <blockquote>
+                "Excelente calidad de resolución"
+                <cite>Carlos Contreras</cite>
+            </blockquote>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#" method="POST">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required minlength="3">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" required minlength="15"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar Mensaje">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
